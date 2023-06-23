@@ -1,0 +1,15 @@
+.navContainer{
+    width: 100%;
+    background-color:rgba(30, 80, 219, 0.678);
+    color: white;
+    font-size: 24px;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.containerCategories{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
