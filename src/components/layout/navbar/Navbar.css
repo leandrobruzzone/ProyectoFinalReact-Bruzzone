@@ -1,4 +1,4 @@
-.navContainer{
+.containerNavbar{
     width: 100%;
     background-color:rgba(30, 80, 219, 0.678);
     color: white;
@@ -8,8 +8,15 @@
     justify-content: space-between;
     align-items: center;
 }
-.containerCategories{
+.categories{
     display: flex;
-    list-style: none;
+    justify-content: space-evenly;
+    align-items: center;
     gap: 30px;
-}
+  }
+.categories a {
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    border-radius: 10px;
+  }

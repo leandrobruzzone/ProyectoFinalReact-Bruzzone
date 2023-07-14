@@ -1,16 +1,22 @@
 import CartWidget from "../../common/cartWidget/CartWidget";
 import "./Navbar.css";
+import { Link, Outlet } from "react-router-dom";
+
 const Navbar = () => {
   return (
-    <div className="navContainer">
-      <h4>TecnoCoder</h4>
-      <ul className="containerCategories">
-        <li>Celulares</li>
-        <li>Notebooks</li>
-        <li>Tablets</li>
-      </ul>
-      <CartWidget />
+    <div>
+      <div className={"containerNavbar"}>
+        <Link to="/" style={{color: "white"}}>Inicio</Link>
+        <ul className="categories">
+          <Link to="/category/celulares">Celulares</Link>
+          <Link to="/category/notebooks">Notebooks</Link>
+          <Link to="/category/tablets">Tablets</Link>
+        </ul>
+        <CartWidget />
+      </div>
+     <Outlet />
     </div>
   );
 };
+
 export default Navbar;
